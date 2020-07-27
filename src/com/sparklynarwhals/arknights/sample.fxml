@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sparklynarwhals.arknights.Controller">
+   <children>
+      <Accordion>
+        <panes>
+          <TitledPane animated="false" text="Choose Available Operators">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="All Operators" />
+                        <ListView fx:id="allOperatorList" prefHeight="200.0" prefWidth="200.0" />
+                        <Label text="Available Operators" />
+                        <ListView fx:id="availableOperatorList" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="operatorTextField" />
+                        <Button fx:id="operatorButton" mnemonicParsing="false" text="Add/Remove Operator" />
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Choose Available Stages">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="All Stages" />
+                        <ListView fx:id="allStagesList" prefHeight="200.0" prefWidth="200.0" />
+                        <Label text="Available Stages" />
+                        <ListView fx:id="availableStagesList" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="stageTextField" />
+                        <Button fx:id="stageButton" mnemonicParsing="false" text="Add/Remove Stage" />
+                     </children></VBox>
+               </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Extra Challenges">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="All Challenges" />
+                        <ListView fx:id="allChallengesList" prefHeight="200.0" prefWidth="200.0" />
+                        <Label text="Available Challenges" />
+                        <ListView fx:id="availableChallengesList" prefHeight="200.0" prefWidth="200.0" />
+                        <TextField fx:id="challengeTextField" />
+                        <Button fx:id="challengeButton" mnemonicParsing="false" text="Add/Remove Challenges" />
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+            <TitledPane animated="false" text="Extra Options">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <CheckBox fx:id="easyMode" alignment="CENTER" mnemonicParsing="false" text="Easy Mode">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin></CheckBox>
+                        <CheckBox fx:id="noMedic" mnemonicParsing="false" text="No Medics">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="noGuard" mnemonicParsing="false" text="No Guards">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="noSniper" mnemonicParsing="false" text="No Snipers">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="noVanguard" mnemonicParsing="false" text="No Vanguards">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="noCaster" mnemonicParsing="false" text="No Casters">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="noDefender" mnemonicParsing="false" text="No Defenders">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="noHighStar" mnemonicParsing="false" text="No 5/6 Star Operators">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <HBox alignment="CENTER" prefHeight="27.0" prefWidth="186.0">
+                           <children>
+                              <Label text="Operator Count: " />
+                              <Spinner fx:id="operatorCountSpinner" prefHeight="27.0" prefWidth="72.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="406.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="372.0" text="Arknights Random Operation">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="howToButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="102.0" text="How to Use" />
+            <Label fx:id="diffLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="160.0" text="Difficulty Rating:" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="operationLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="184.0" text="Operation:" textAlignment="CENTER" />
+            <ListView fx:id="operatorList" prefHeight="213.0" prefWidth="372.0" />
+            <Label fx:id="chosenChallengeLabel" text="Challenge:">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="randomizeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="0.0" prefWidth="136.0" text="Randomize" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin></VBox>
+   </children>
+</HBox>
