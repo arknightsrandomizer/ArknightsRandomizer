@@ -61,3 +61,8 @@ There is a difficulty rating given to give you a general idea of how hard the op
 - No Pause: 3
 - 2x Speed Only: 2 (Honestly does anyone ever play on 1x speed?)
 - No Active Skills: 15 (Because rip Silverash, Eyafjalla, Chen, and a whole bunch of other operators)
+
+<br>
+
+# Changing Stuff
+If you ever want to add new operators or new stages into the application (maybe because I am super lazy and never update the application with new stuff) it's super easy. You can change the .xml files included in the folder that the .jar file is in. To add an operator, just add it to operator.xml with the name of the operator, the number of skills the operator has to choose from, the number of stars, the position the operator takes, and the type of damage they do (Physical vs. Arts). To add a stage, add it to the stages.xml with the name of the stage.
